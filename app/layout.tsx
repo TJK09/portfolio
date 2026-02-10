@@ -1,18 +1,13 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Poppins } from "next/font/google";
+import { Raleway, Montserrat , Poppins } from "next/font/google";
 import "./globals.css";
 import Hero from "./components/Hero"
 import Info from "./components/Info";
+import About from "./components/About";
+import Skills from "./components/Skills";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const raleway = Raleway({ subsets: ['latin'], weight: ['400', '700'] })
+const montserrat = Montserrat({ subsets: ['latin'], weight: ['400', '700'] })
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -33,9 +28,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-         className={`${poppins.variable} font-sans`}>
+         className={` ${raleway.className} ${montserrat.className} ${poppins.className} font-sans `}>
         <Hero />
         <Info />
+        <About />
+        <Skills />
         {children}
       </body>
     </html>
