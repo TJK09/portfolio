@@ -1,9 +1,9 @@
 'use client';
 
 import Image from "next/image";
-import email from "@/public/email.png";
-import github from "@/public/Github1.png";
-import linkedin from "@/public/linkdin.png";
+import email from "@/public/email-svgrepo-com.svg";
+import github from "@/public/github-142-svgrepo-com.svg";
+import linkedin from "@/public/linkedin-161-svgrepo-com.svg";
 
 const HeroContent = () => {
   return (
@@ -20,15 +20,15 @@ const HeroContent = () => {
       </div>
 
       <div className="flex space-x-4 mt-5">
-        <div className="flex bg-[#c4c4c4] p-2 rounded" onClick={() => window.open("mailto:taimurjan241@gmail.com", "_blank")}>
-          <Image className="object-cover hover:cursor-pointer" src={email} alt="Email" width={40} height={40} />
+        <div className="flex bg-[#c4c4c4] p-2 rounded hover:shadow" onClick={() => window.open("mailto:taimurjan241@gmail.com", "_blank")}>
+          <Image className="object-contain hover:cursor-pointer" src={email} alt="Email" width={40} height={40} />
         </div>
-        <div className="flex bg-[#c4c4c4] p-2 rounded" onClick={()=>window.open("https://github.com/TJK09")}>
+        <div className="flex bg-[#c4c4c4] p-2 rounded hover:shadow" onClick={()=>window.open("https://github.com/TJK09")}>
           
-          <Image className="object-cover hover:cursor-pointer" src={github} alt="GitHub" width={40} height={40} />
+          <Image className="object-contain hover:cursor-pointer" src={github} alt="GitHub" width={40} height={40} />
         </div>
-        <div className="flex bg-[#c4c4c4] p-2 rounded" onClick={()=>window.open("https://www.linkedin.com/in/taimur-jan-69518b297/")}>
-          <Image className="object-cover hover:cursor-pointer" src={linkedin} alt="LinkedIn" width={40} height={40} />
+        <div className="flex bg-[#c4c4c4] p-2 rounded hover:shadow" onClick={()=>window.open("https://www.linkedin.com/in/taimur-jan-69518b297/")}>
+          <Image className="object-contain hover:cursor-pointer" src={linkedin} alt="LinkedIn" width={40} height={40} />
         </div>
       </div>
     </div>

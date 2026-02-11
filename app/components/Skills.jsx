@@ -27,29 +27,29 @@ const Skills = () => {
             <div className="flex flex-col mx-72 my-10">
                 <h1 className="text-[30px] font-bold">USING NOW :</h1>
                 <div className="mt-10 grid grid-cols-4 grid-rows-2 gap-20">
-                    <Image className="object-cover w-40 h-40" src={HTML}  />
-                    <Image className="object-cover w-40 h-40" src={CSS} />
-                    <Image className="object-cover w-40 h-40" src={Tailwind}  />
-                    <Image className="object-cover w-40 h-40" src={JS} />
+                    <Image className="object-cover w-40 h-40" src={HTML}  alt="logos" />
+                    <Image className="object-cover w-40 h-40" src={CSS}  alt="logos"/>
+                    <Image className="object-cover w-40 h-40" src={Tailwind}  alt="logos" />
+                    <Image className="object-cover w-40 h-40" src={JS}  alt="logos"/>
                 </div>
                 <div className="mt-10 grid grid-cols-4 grid-rows-2 gap-20">
-                    <Image className="object-cover w-40 h-40" src={React}  />
-                    <Image className="object-cover w-40 h-40" src={Next} />
-                    <Image className="object-cover w-40 h-40" src={Node}  />
-                    <Image className="object-cover w-40 h-40" src={Django} />
+                    <Image className="object-cover w-40 h-40" src={React}  alt="logos" />
+                    <Image className="object-cover w-40 h-40" src={Next} alt="logos" />
+                    <Image className="object-cover w-40 h-40" src={Node}   alt="logos"/>
+                    <Image className="object-cover w-40 h-40" src={Django} alt="logos" />
                 </div>
             </div>
             <div className="flex flex-col mx-72 my-10">
                 <h1 className="text-[30px] font-bold">LEARNING NOW :</h1>
                 <div className="mt-10 grid grid-cols-4 grid-rows-2 gap-20">
-                    <Image className="object-cover w-40 h-40" src={Express}  />
-                    <Image className="object-cover w-40 h-40" src={Post} />
-                    <Image className="object-cover w-40 h-40" src={Type}  />
-                    <Image className="object-cover w-40 h-40" src={Nest} />
+                    <Image className="object-cover w-40 h-40" src={Express} alt="logo " />
+                    <Image className="object-cover w-40 h-40" src={Post} alt="logo "/>
+                    <Image className="object-cover w-40 h-40" src={Type} alt="logo " />
+                    <Image className="object-cover w-40 h-40" src={Nest} alt="logo "/>
                 </div>
                 <div className="mt-10 pl-[100px] grid grid-cols-2 ">
-                    <Image className="object-cover w-40 h-40" src={prisma}  />
-                    <Image className="object-cover w-40 h-40" src={mongo} />
+                    <Image className="object-cover w-40 h-40" src={prisma}  alt="logo "/>
+                    <Image className="object-cover w-40 h-40" src={mongo} alt="logo "/>
                 </div>
             </div>
         </div>
