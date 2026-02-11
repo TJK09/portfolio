@@ -6,6 +6,7 @@ import Info from "./components/Info";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 
 const raleway = Raleway({ subsets: ['latin'], weight: ['400', '700'] })
@@ -37,6 +38,7 @@ export default function RootLayout({
         <Skills />
         <Contact />
         {children}
+        <Footer />
       </body>
     </html>
   );
