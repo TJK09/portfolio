@@ -5,6 +5,8 @@ import Hero from "./components/Hero"
 import Info from "./components/Info";
 import About from "./components/About";
 import Skills from "./components/Skills";
+import Contact from "./components/Contact";
+
 
 const raleway = Raleway({ subsets: ['latin'], weight: ['400', '700'] })
 const montserrat = Montserrat({ subsets: ['latin'], weight: ['400', '700'] })
@@ -33,6 +35,7 @@ export default function RootLayout({
         <Info />
         <About />
         <Skills />
+        <Contact />
         {children}
       </body>
     </html>
