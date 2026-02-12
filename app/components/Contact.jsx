@@ -1,7 +1,48 @@
+"use client"
+
 import Image from "next/image"
 import seperator from "@/public/separatorBlack 1.png"
+import { useState } from "react"
 
 const Contact = () => {
+
+    const [ formData, setFormData ] = useState({
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+    })
+
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name] : e.target.value,
+        });
+    }
+
+    const handleForm = async (e) =>{
+        e.preventDefault()
+
+        const res = await fetch("/api/contact/",{
+            method: "POST",
+            headers:{"Content-type":"application/json"},
+            body: JSON.stringify(formData)
+        });
+        const data = await res.json()
+        
+        if(data.success){
+            alert("Message Sent")
+            setFormData({
+                name:"",
+                email:"",
+                phone:"",
+                message:"",
+            })
+        }else{
+            alert("Something went wrong check logs")
+        }
+    }
+
   return (
     <div id="contact">
         <div className="flex flex-col items-center justify-center my-5 mt-10">
@@ -10,28 +51,34 @@ const Contact = () => {
             <Image className="object-contain mt-10" src={seperator} alt="seperator"  />
         </div>
         <div className="flex flex-col items-center justify-center gap-15">
-            <form action="" className="flex flex-col justify-center items-center gap-10 mt-[50px]">
+            <form onSubmit={handleForm} className="flex flex-col justify-center items-center gap-10 mt-[50px]">
                 <input
                     type="text"
+                    name="name"
                     placeholder="Enter your Name*"
+                    value={formData.name}
                     className="px-4 w-2xl 
                                 border-l-4 border-b-4 border-t-0 border-r-0
                                 focus:outline-none focus:ring-0 
                                 focus:border-l-4 focus:border-b-4 focus:border-t-0 focus:border-r-0"
+                    onChange={handleChange}
                     />
-                <input type="email" placeholder="Enter your Email*" className="px-4 w-2xl 
+                <input type="email" placeholder="Enter your Email*" name="email" value={formData.email} className="px-4 w-2xl 
                                 border-l-4 border-b-4 border-t-0 border-r-0
                                 focus:outline-none focus:ring-0 
-                                focus:border-l-4 focus:border-b-4 focus:border-t-0 focus:border-r-0" />
-                <input type="phone" placeholder="Enter your Phone Number*" className="px-4 w-2xl 
+                                focus:border-l-4 focus:border-b-4 focus:border-t-0 focus:border-r-0"
+                        onChange={handleChange}/>
+                <input type="tel" placeholder="Enter your Phone Number*" name="phone" value={formData.phone} className="px-4 w-2xl 
                                 border-l-4 border-b-4 border-t-0 border-r-0
                                 focus:outline-none focus:ring-0 
-                                focus:border-l-4 focus:border-b-4 focus:border-t-0 focus:border-r-0" />
-                <textarea name="" id="" placeholder="Write your Message here*" className="px-4 w-2xl 
+                                focus:border-l-4 focus:border-b-4 focus:border-t-0 focus:border-r-0"
+                        onChange={handleChange} />
+                <textarea name="message" value={formData.message} id="" placeholder="Write your Message here*"  className="px-4 w-2xl 
                                 border-l-4 border-b-4 border-t-0 border-r-0
                                 focus:outline-none focus:ring-0 
-                                focus:border-l-4 focus:border-b-4  focus:border-t-0 focus:border-r-0 h-30"></textarea>
-                <button className="text-[16px] font-bold border-l-4 border-r-4 
+                                focus:border-l-4 focus:border-b-4  focus:border-t-0 focus:border-r-0 h-30"
+                        onChange={handleChange}></textarea>
+                <button type="submit" className="text-[16px] font-bold border-l-4 border-r-4 
                                     px-10 mt-[20px] hover:bg-black hover:text-white
                                     hover:border-gray-200 ">SUBMIT</button>
             </form>
