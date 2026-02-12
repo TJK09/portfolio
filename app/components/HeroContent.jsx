@@ -6,6 +6,15 @@ import github from "@/public/github-142-svgrepo-com.svg";
 import linkedin from "@/public/linkedin-161-svgrepo-com.svg";
 
 const HeroContent = () => {
+
+  const handleDownload = () =>{
+    const link = document.createElement("a");
+    link.href = "./MyCV.pdf";
+    link.download = "TaimurJanCV.pdf"
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link);
+  }
   return (
     <div id="hero">
       <div className="flex">
@@ -32,7 +41,7 @@ const HeroContent = () => {
         </div>
       </div>
       <div className="flex">
-        <button className="text-[30px] mt-[50px] font-bold border-4 rounded-2xl p-5 px-10 hover:bg-black hover:text-white hover:border-gray-200 ">Download Resume!</button>
+        <button onClick={handleDownload} className="text-[30px] mt-[50px] font-bold border-4 rounded-2xl p-5 px-10 hover:bg-black hover:text-white hover:border-gray-200 "><a href="./MyCV.pdf">Download Resume!</a></button>
       </div>
     </div>
   );
