@@ -24,7 +24,7 @@ const HeroContent = () => {
       <div className="flex flex-col">
         <h1 className="text-[80px] font-bold">Taimur Jan</h1>
         <p className="text-[25px] text-[#909090] font-raleway font-extrabold">
-          Frontend Developer
+          Frontend Developer/ Django Developer
         </p>
       </div>
 
