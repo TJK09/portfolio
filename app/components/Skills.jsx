@@ -19,7 +19,7 @@ import prisma from "@/public/prisma-svgrepo-com.svg"
 
 const Skills = () => {
   return (
-    <div>
+    <div id="skills">
         <div className="flex justify-center items-center mt-20">
            <h1 className="text-[30px] font-bold border-6 py-4 px-22 hover:bg-black hover:text-white hover:border-gray-200 ">SKILLS</h1> 
         </div>

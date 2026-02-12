@@ -10,9 +10,9 @@ const Navbar = () => {
             </div>
             <div className="flex">
                 <ul className='flex flex-row gap-10'>
-                    <li className='font-poppins text-white hover:bg-white hover:text-black hover:rounded-full px-3'>About Me</li>
-                    <li className='font-poppins text-white hover:bg-white hover:text-black hover:rounded-full px-3'>Contact Me</li>
-                    <li className='font-poppins text-white hover:bg-white hover:text-black hover:rounded-full px-3'>Skills</li>
+                    <li className='font-poppins text-white hover:bg-white hover:text-black hover:rounded-full px-3'><a href="#about">About Me</a></li>
+                    <li className='font-poppins text-white hover:bg-white hover:text-black hover:rounded-full px-3'><a href="#contact">Contact Me</a></li>
+                    <li className='font-poppins text-white hover:bg-white hover:text-black hover:rounded-full px-3'><a href="#skills">Skills</a></li>
                 </ul>
             </div>
         </nav>

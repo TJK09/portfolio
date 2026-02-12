@@ -7,9 +7,9 @@ import linkedin from "@/public/linkedin-161-svgrepo-com.svg";
 
 const HeroContent = () => {
   return (
-    <div>
+    <div id="hero">
       <div className="flex">
-        <h1 className="mt-52 text-3xl font-bold">Hi, I am</h1>
+        <h1 className="mt-20 text-3xl font-bold">Hi, I am</h1>
       </div>
 
       <div className="flex flex-col">
@@ -30,6 +30,9 @@ const HeroContent = () => {
         <div className="flex bg-[#c4c4c4] p-2 rounded hover:shadow" onClick={()=>window.open("https://www.linkedin.com/in/taimur-jan-69518b297/")}>
           <Image className="object-contain hover:cursor-pointer" src={linkedin} alt="LinkedIn" width={40} height={40} />
         </div>
+      </div>
+      <div className="flex">
+        <button className="text-[30px] mt-[50px] font-bold border-4 rounded-2xl p-5 px-10 hover:bg-black hover:text-white hover:border-gray-200 ">Download Resume!</button>
       </div>
     </div>
   );

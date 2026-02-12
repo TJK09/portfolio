@@ -3,7 +3,7 @@ import seperatorBlack from "@/public/separatorBlack 1.png"
 
 const About = () => {
   return (
-    <div>
+    <div id="about">
         <div className="mt-24 flex flex-col items-center justify-center w-full bg-gray-200">
             <h1 className="text-[30px] font-bold px-16 py-4 border-6 hover:bg-black hover:text-white hover:border-gray-200 " >ABOUT ME</h1>
             <p className="text-[15px] mt-12">Hi I am a Frontend Developer working on React JS and Next JS. I implement Responsive design using Tailwind CSS.</p>

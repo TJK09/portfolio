@@ -3,7 +3,7 @@ import seperator from "@/public/separatorBlack 1.png"
 
 const Contact = () => {
   return (
-    <div>
+    <div id="contact">
         <div className="flex flex-col items-center justify-center my-5 mt-10">
             <h1 className="text-[30px] font-bold border-4 py-2 px-10 hover:bg-black hover:text-white hover:border-gray-200">CONTACT</h1>
             <p className="text-[15px] mt-10 ">Feel Free to leave me a message on the form below</p>

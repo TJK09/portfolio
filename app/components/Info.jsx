@@ -2,7 +2,7 @@
 
 const Info = () => {
   return (
-    <div>
+    <div id="info">
         <div className="flex flex-col p-20 bg-black text-white">
             <div className="flex flex-col">
                 <h1 className="text-[30px] pb-2 font-bold">Introduction</h1>
