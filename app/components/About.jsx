@@ -27,8 +27,8 @@ const About = () => {
             </div>
         </div>
         <div className="flex flex-col items-center ">
-            <h1 className="mt-20 text-[22px] font-semibold pr-[200px]">Responsive Designs</h1>
-            <p className="text-[15px] w-[50%] pl-[170px] ">I can design the site based on your needs and suggestions. I can also design the site from scratch and consult you during the job.</p>
+            <h1 className="mt-20 text-[22px] font-semibold pr-[200px]">Deployment</h1>
+            <p className="text-[15px] w-[50%] pl-[170px] ">I can also deploy wesbites to Clouds by creating Pipelines that will automate CI/CD. I can use different tools to automate the process that are mentioned in my CV. You can check my DockerHub for the images that have been used in CI/CD Pipelines.</p>
         </div>
         <div className="mt-20 flex items-center justify-center">
             <Image src={seperatorBlack} alt="Seperator" />

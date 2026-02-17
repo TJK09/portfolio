@@ -13,6 +13,7 @@ import Type from "@/public/typescript-official-svgrepo-com.svg"
 import mongo from "@/public/mongodb-logo-svgrepo-com.svg"
 import Nest from "@/public/nestjs-svgrepo-com.svg"
 import prisma from "@/public/prisma-svgrepo-com.svg"
+import seperator from "@/public/separatorBlack 1.png"
 
 
 
@@ -51,6 +52,9 @@ const Skills = () => {
                     <Image className="object-cover w-40 h-40" src={prisma}  alt="logo "/>
                     <Image className="object-cover w-40 h-40" src={mongo} alt="logo "/>
                 </div>
+            </div>
+            <div className="flex">
+                <Image src={seperator} alt="seperator" />
             </div>
         </div>
     </div>
