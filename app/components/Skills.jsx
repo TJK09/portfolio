@@ -53,7 +53,7 @@ const Skills = () => {
                     <Image className="object-cover w-40 h-40" src={mongo} alt="logo "/>
                 </div>
             </div>
-            <div className="flex">
+            <div className="flex justify-center items-center">
                 <Image src={seperator} alt="seperator" />
             </div>
         </div>
