@@ -6,7 +6,7 @@ import { projects } from "../../data/project";
 import ProjectCard from "../components/ProjectCard";
 import Navbar from "../components/Navbar";
 
-const techfilters = ["All", "React", "Next.js", "TypeScript"];
+const techfilters = ["All", "React", "Next.js", "TypeScript","Django", "Laravel PHP"];
 
 export default function Project(){
     const [filter, setFilter] = useState("All");
@@ -30,7 +30,7 @@ export default function Project(){
                 ))}
             </div>
             {/*Cards Grid*/}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10 ml-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10 mx-10  ">
                 {filtered.map((p) => (
                     <ProjectCard project={p} key={p.slug} />
                 ))}

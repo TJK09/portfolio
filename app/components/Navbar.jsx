@@ -13,6 +13,7 @@ const Navbar = () => {
                     <li className='font-poppins text-white hover:bg-white hover:text-black hover:rounded-full px-3'><a href="#about">About Me</a></li>
                     <li className='font-poppins text-white hover:bg-white hover:text-black hover:rounded-full px-3'><a href="#contact">Contact Me</a></li>
                     <li className='font-poppins text-white hover:bg-white hover:text-black hover:rounded-full px-3'><a href="#skills">Skills</a></li>
+                    <li className='font-poppins text-white hover:bg-white hover:text-black hover:rounded-full px-3'><a href="/project">Projects</a></li>
                 </ul>
             </div>
         </nav>
