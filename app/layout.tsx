@@ -35,11 +35,6 @@ export default function RootLayout({
     <html lang="en">
       <body
          className={` ${raleway.className} ${montserrat.className} ${poppins.className} font-sans `}>
-        <Hero />
-        <Info />
-        <About />
-        <Skills />
-        <Contact />
         {children}
         <Footer />
       </body>
