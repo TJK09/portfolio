@@ -16,14 +16,14 @@ export default function Project(){
     return(
         <section className="flex flex-col">
             <ProjectNavbar />
-            <h1 className= "text-[30px] font-semibold mt-10">My Projects</h1>
+            <h1 className= "text-[30px] font-semibold mt-10 ml-[50px]">My Projects</h1>
 
         {/* Filter */}
-            <h1 className="text-[20px] font-semibold mt-10">Filters</h1>
-            <div className="flex">
+            <h1 className="text-[20px] font-semibold mt-10 ml-[50px]">Filters</h1>
+            <div className="flex ml-[50px]">
                 
                 {techfilters.map((t) => (
-                    <button className={`px-4 py-2 rounded ${filter === t ? "bg-blue-500 text-white" : "bg-gray-200 text-gray-700"}`} 
+                    <button className={`px-4 py-2 rounded ${filter === t ? "bg-black text-white" : "bg-gray-200 text-gray-700"}`} 
                         onClick={() => setFilter(t)}
                          key={t}>
                       {t}  
