@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { projects } from "../../data/project";
 import ProjectCard from "../components/ProjectCard";
-import Navbar from "../components/Navbar";
+import ProjectNavbar from "../components/projectNavbar";
 
 const techfilters = ["All", "React", "Next.js", "TypeScript","Django", "Laravel PHP"];
 
@@ -15,7 +15,8 @@ export default function Project(){
 
     return(
         <section className="flex flex-col">
- /           <h1 className= "text-[30px] font-semibold mt-10">My Projects</h1>
+            <ProjectNavbar />
+            <h1 className= "text-[30px] font-semibold mt-10">My Projects</h1>
 
         {/* Filter */}
             <h1 className="text-[20px] font-semibold mt-10">Filters</h1>
